@@ -19,12 +19,20 @@ require 'rails_helper'
 # that an instance is receiving a specific message.
 
 RSpec.describe PeopleController, type: :controller do
-
   # This should return the minimal set of attributes required to create a valid
   # Person. As you add validations to Person, be sure to
   # adjust the attributes here as well.
+  
+  before { sign_in }
+  
   let(:valid_attributes) {
-    skip("Add a hash of attributes valid for your model")
+    skip({
+      first_name: Faker::Name.first_name,
+      last_name: Faker::Name.last_name,
+      address: FactoryGirl.create(:address),
+      company: FactoryGirl.create(:company),
+      contact: FactoryGirl.create(:contact)
+    })
   }
 
   let(:invalid_attributes) {

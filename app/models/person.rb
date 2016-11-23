@@ -8,4 +8,9 @@ class Person < ApplicationRecord
   validates :address, :presence => true
   validates :company, :presence => true
   validates :contact, :presence => true
+  
+  def to_s
+    "#{first_name} #{last_name}"
+  end
+  
 end
