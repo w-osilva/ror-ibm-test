@@ -1,6 +1,7 @@
 FactoryGirl.define do
   factory :state do
-    name "MyString"
-    abbreviation "MyString"
+    id { generate(:id) }
+    name Faker::Address.state
+    abbreviation Faker::Address.state_abbr
   end
 end
