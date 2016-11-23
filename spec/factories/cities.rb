@@ -1,6 +1,7 @@
 FactoryGirl.define do
   factory :city do
-    name "MyString"
-    state nil
+    id { generate(:id) }
+    name Faker::Address.state
+    state { FactoryGirl.create(:state) }
   end
 end

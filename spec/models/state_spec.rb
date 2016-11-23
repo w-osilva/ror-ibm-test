@@ -2,6 +2,8 @@ require 'rails_helper'
 
 RSpec.describe State, type: :model do
   
+  DatabaseCleaner.clean_with(:deletion)
+  
   describe "validations" do
     
     context "data imported from csv file" do
