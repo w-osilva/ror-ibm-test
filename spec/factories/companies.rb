@@ -1,5 +1,6 @@
 FactoryGirl.define do
   factory :company do
-    name "MyString"
+    id { generate(:id) }
+    name Faker::Company.name
   end
 end
