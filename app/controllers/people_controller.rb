@@ -4,7 +4,7 @@ class PeopleController < ApplicationController
   # GET /people
   # GET /people.json
   def index
-    @people = Person.all
+    @people = Person.eager_load(:address, :company, :contact).all
   end
 
   # GET /people/1

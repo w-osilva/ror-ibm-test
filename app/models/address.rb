@@ -7,4 +7,8 @@ class Address < ApplicationRecord
   validates :zip, :presence => true
   validates :city, :presence => true
   validates :state, :presence => true
+  
+  def to_s
+    "#{address}, #{county}, #{city}, #{state}"
+  end
 end

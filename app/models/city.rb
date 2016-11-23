@@ -3,4 +3,8 @@ class City < ApplicationRecord
 
   validates :name, :presence => true
   validates :state, :presence => true
+  
+  def to_s
+    name
+  end
 end
