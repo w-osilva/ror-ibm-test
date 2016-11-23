@@ -19,7 +19,7 @@ namespace :importer do
 
     rake_log do
       importer = Importer::Csv.new(absolute_path)
-      importer.run
+      importer.run(from_rake: true)
     end
   end
   
