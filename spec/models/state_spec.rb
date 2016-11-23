@@ -24,4 +24,14 @@ RSpec.describe State, type: :model do
     
   end
   
+  describe "relationship" do
+    
+    it "must have a collection of cities" do
+      expect(FactoryGirl.build(:state).cities).to have(0).items
+    end
+    
+  end
+  
+  
+  
 end

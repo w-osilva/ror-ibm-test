@@ -21,6 +21,12 @@ RSpec.describe City, type: :model do
       end
   
     end
-
+    
+  end
+  
+  describe "relationship" do
+    it "must belong to the State" do
+      expect(FactoryGirl.build(:city).state).to be_an_instance_of(State)
+    end
   end
 end
