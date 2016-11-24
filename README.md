@@ -1,6 +1,6 @@
 # ROR IBM TEST
 
-## Built with:
+## Built with
 
 * ruby 2.3.1
 * rails 5.0.0.1
@@ -23,3 +23,9 @@ Import data from csv file and display it on web pages.
 
 * Alternative storage suggestion
 * Suggestion for scalability assuming that the csv file can grow exponentially
+
+
+
+# SETUP [click here](SETUP.md)
+
+# CONCLUSION [click here](PLUS.md) 
