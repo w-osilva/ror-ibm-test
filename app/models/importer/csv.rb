@@ -6,6 +6,7 @@ module Importer
       file_name = file_path.split("/").last
       extension = File.extname(file_name)
       raise ArgumentError.new( "The file must be a csv") unless extension == '.csv'
+      raise ArgumentError.new( "The file does not exist") unless File.file? file_path
       @file_path = file_path
     end
     
