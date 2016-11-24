@@ -1,6 +1,6 @@
 # ROR IBM TEST
 
-## Built with:
+## Built with
 
 * ruby 2.3.1
 * rails 5.0.0.1
@@ -26,4 +26,6 @@ Import data from csv file and display it on web pages.
 
 
 
-# TO READ MY CONCLUSION [click here](PLUS.md) 
+# SETUP [click here](SETUP.md)
+
+# CONCLUSION [click here](PLUS.md) 
