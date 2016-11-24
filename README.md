@@ -23,3 +23,7 @@ Import data from csv file and display it on web pages.
 
 * Alternative storage suggestion
 * Suggestion for scalability assuming that the csv file can grow exponentially
+
+
+
+# TO READ MY CONCLUSION [click here](PLUS.md) 
