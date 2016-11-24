@@ -12,7 +12,7 @@ Update dependencies
 Dabase setup
      
     $ rake db:create
-    $ rake db:drop
+    $ rake db:migrate
     
 # CSV Import
 
