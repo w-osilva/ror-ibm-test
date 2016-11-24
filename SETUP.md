@@ -1,4 +1,4 @@
-# Setuṕ
+# Setup
 
 Clone application
 
@@ -7,7 +7,7 @@ Clone application
 Update dependencies
  
     $ cd ror-ibm-test
-    $ cd bundle update
+    $ bundle update
     
 Dabase setup
      
